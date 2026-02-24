@@ -184,4 +184,5 @@ Example:
 obun src/index.obun -o dist.py -D DEBUG -B run -w
 ```
 
-
+## Why that name?
+Because Ōbun means oven in japanese. So this is kind of like an oven for your code where your snippets are the ingredients you put inside of it. Yes I just typed "oven" into google translate trying to find a cool sounding name for this.
