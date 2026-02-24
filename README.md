@@ -2,7 +2,6 @@
 A build system that makes it easy to modularize code for any non-compiled programming language.
 It lets you easily split your code into multiple snippet files you can piece together with a central `index.obun` file + the Obun CLI and build a single, perfectly compact executable script.
 
----
 
 ## What can you do with it?
 - Organize your 1000-line prototype single-file scripts in no time
@@ -14,7 +13,6 @@ It lets you easily split your code into multiple snippet files you can piece tog
 
 And guess what? it has *zero* external dependencies!
 
----
 
 ## How to install
 Clone the repo and run `install.sh`:
@@ -25,7 +23,6 @@ cd obun
 ```
 This will automatically add obun to your PATH so you can just run it using `obun`.
 
----
 
 ## Get started
 
@@ -41,8 +38,7 @@ sample/
         └── (...)
 ```
 
-### Example `index.obun`
-
+`index.obun`:
 ```
 0o ---
 artifact-name: obun-example.py
@@ -67,7 +63,6 @@ You can build your project with:
 obun sample
 ```
 
----
 
 ## Manifest
 
@@ -97,7 +92,6 @@ build-mode: prod
 --- o0
 ```
 
----
 
 ## Includes
 
@@ -109,7 +103,6 @@ You can use section markers to insert other files right where the marker is:
 
 Obun recursively resolves these, stitches them together, and builds a single output.
 
----
 
 ## Conditional Compilation
 
@@ -136,7 +129,6 @@ Or even pass multiple:
 obun -D DEBUG -D LOGGING
 ```
 
----
 
 ## Build Modes
 
@@ -158,7 +150,6 @@ obun -B run
 obun -B prod
 ```
 
----
 
 ## Watcher Mode
 
@@ -169,7 +160,6 @@ When combined with run mode (`-B run`), Obun will restart your program on every 
 obun -w
 ```
 
----
 
 ## CLI arguments
 
