@@ -19,6 +19,7 @@ Clone the repo and run `install.sh`:
 ```bash
 git clone https://github.com/Dogo6647/obun.git
 cd obun
+chmod +x install.sh
 ./install.sh
 ```
 This will automatically add obun to your PATH so you can just run it using `obun`.
