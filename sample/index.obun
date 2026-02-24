@@ -1,0 +1,27 @@
+0o ---
+artifact-name: obun-example.py
+# The name for the compiled file that will be generated
+# if --output isn't specified.
+
+formatter: autopep8
+# The formatter to run on every file declared in this file when running
+# "obun format". Will not generate any builds. (Optional)
+
+shebang: /usr/bin/env python3
+# The runtime used to run the compiled file.
+
+build-mode: run
+# Used when --output isn't specified. "run" creates the compiled file in /tmp/ 
+# and immediately runs it, "prod" outputs the file but doesn't run it.
+# Can be overridden with --build-mode or -B in the CLI.
+--- o0
+
+import flask
+from flask import Flask
+
+app = Flask(__name__)
+
+#:section src/routes.obun.py
+
+if __name__ == '__main__':
+    app.run(port=8080)

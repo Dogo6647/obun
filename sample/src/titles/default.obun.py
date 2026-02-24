@@ -1,0 +1,1 @@
+    return "<h1>Welcome to Obun!</h1><p>Try running obun in -w (watcher) mode and editing /src/titles/default.obun.py to change what's being displayed here!</p> <p>You can also build/run this example project with '-D secret' to reveal a secret page!", 200
